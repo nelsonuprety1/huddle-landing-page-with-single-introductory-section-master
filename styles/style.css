@@ -1,0 +1,132 @@
+@import url('css-reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --font-family-poppin: 'Poppins', sans-serif;
+    --font-family-open-sans: 'Open Sans', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-bold: 600;
+    --color-violet: hsl(257, 40%, 49%);
+    --color-soft-magenta: hsl(300, 69%, 71%);
+}
+
+body {
+    background: var(--color-violet) url('/images/bg-mobile.svg') no-repeat;
+    background-size: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    /* background: white; */
+    /* width: 100%; */
+    max-width: 375px;
+    height: 650px;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); */
+    padding: 2rem;
+    /* align-items: flex-start; */
+}
+
+.huddle {
+    font-weight: var(--font-weight-bold);
+    font-size: 1.5rem;
+    font-family: var(--font-family-poppin);
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 25px 0 0 35px;
+
+}
+
+.fa-comment-dots {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.mockup {
+    margin-top: 90px;
+    margin-bottom: 55px;
+    max-width: 270px;
+}
+
+.main-title {
+    color: hsl(0, 0%, 100%);
+    font-family: var(--font-family-poppin);
+    font-weight: var(--font-weight-bold);
+    font-size: 1.4rem;
+    /* padding: 20px; */
+    padding-left: 20px;
+    margin: 15px 0 20px 0;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.main-text {
+    color: hsl(0, 0%, 100%, 0.9);
+    font-family: var(--font-family-open-sans);
+    font-weight: var(--font-weight-regular);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    letter-spacing: 0.9px;
+    text-align: center;
+}
+
+.btn {
+    background: hsl(0, 0%, 100%, 0.9);
+    color: var(--color-violet);
+    font-family: var(--font-family-poppin);
+    font-weight: var(--font-weight-regular);
+    font-size: 0.8rem;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    margin: 20px 0 20px 50px;
+    cursor: pointer;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:active {
+    color: var(--color-soft-magenta)
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#iconif-icon {
+    cursor: pointer;
+}
+
+.fb-icon,
+.twitter-icon,
+.insta-icon {
+    margin: 0 10px;
+}
+
+#iconify-icon:active {
+    color: var(--color-soft-magenta);
+    transform: scale(0.9);
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 1rem;
+}
+
+
+.attribution a {
+    color: var(--color-soft-magenta);
+}
